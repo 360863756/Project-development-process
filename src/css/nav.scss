@@ -1,0 +1,30 @@
+@import "index.scss";
+p{
+     h1{
+         width: 100px;
+         height: 100px;
+     }
+ }
+ nav{
+     margin: {
+         left: 0;
+         top: 0;
+     }
+     &-let{
+         width: 100px;
+         height: 100px;
+     }
+ }
+ $aa : blue;
+ h1{
+     color: $aa
+ }
+ h2{
+     color: $aa
+ }
+ $list: (h1:50px,h2:30px,h3:20px);
+ @each $key,$value in $list {
+    #{$key} {
+      font-size: $value;
+    }
+  }
